@@ -3,6 +3,7 @@
 import re
 import ply.lex as lex
 import sys
+import json
 
 tokens = "EC AREA SIN ES EN PT NOTA ER LANGCONT ERCONT NL".split(" ")
 
@@ -158,7 +159,9 @@ def t_error(t):
 
 def t_eof(t):
     #print(t.lexer.count)
-    print(t.lexer.dict)
+    json_object = json.dumps(t.lexer.dict, indent=4, ensure_ascii=False)
+    print(json_object)
+
 
 ex = open(sys.argv[1], "r")
 proc = lex.lex()
