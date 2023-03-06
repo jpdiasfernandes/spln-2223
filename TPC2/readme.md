@@ -13,7 +13,7 @@
 
 # Resumo
 
--   Neste TPC o objetivo era a criação de um dicionário que fosse refém a uma só linguagem e que facilmente se expandisse para outras.
+-   Neste TPC o objetivo era a criação de um dicionário que nfosse refém a uma só linguagem e que facilmente se expandisse para outras.
 -   Para tal, não poderiam haver entradas numa só linguagem. No entanto, é de salientar que se adicionou, a cada entrada uma lista de áreas às quais ela pertence. Estas áreas podem no futuro vir a ser índices para entradas que representam informação dessa área. No teste apresentado representam a área em extenso.
 
 -   No caso de se querer adicionar mais campos a solução é fácil devido a uma boa combinação entre simplicidade e açúcar sintático. Todos os atributos seguem o mesmo formato. A adição de linguagens é também muito fácil. Os elementos de uma entrada seguem também todos o mesmo formato, sendo que a criação de um novo elemento execuível.
