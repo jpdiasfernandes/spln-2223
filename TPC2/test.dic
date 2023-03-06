@@ -1,0 +1,13 @@
+Areas:(area textual)
+Ling:
+    (pt): texto | (cat m)
+
+Areas:(area textual)
+Ling:
+    (pt): textual | (cat f)
+
+Areas: (area financeira) (area credito)
+Ling:
+    (swe): fordran | (syn krav) (syn ansprak)
+    (en): claim | (syn demand) (syn requirement)
+    (pt): cobrança | (nota ato ou feito de cobrar ou receber quaisquer dívidas ou donativos) (syn coleta de quantias)
