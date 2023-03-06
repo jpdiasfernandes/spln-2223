@@ -3,7 +3,7 @@
 import ply.lex as lex
 import sys
 
-tokens = "AREAS NOTA CONCEITO LING OPEN CLOSE CAT REG AREA VAR SG NL BR PT ES GA EN TEXT COLON SLASH POP CULT SWE SYN".split(" ")
+tokens = "AREAS NOTA CONCEITO LING OPEN CLOSE CAT REG AREA VAR SG NL BR PT ES GA EN TEXT COLON SLASH POP CULT SWE SYN INDEX".split(" ")
 
 states = (
     ('TAG', 'inclusive'),
@@ -37,7 +37,7 @@ def t_PT(t):
     return t
 
 def t_ES(t):
-    r'\(en\)'
+    r'\(es\)'
     return t
 
 def t_GA(t):
@@ -54,6 +54,10 @@ def t_NL(t):
 
 def t_AREAS(t):
     r'Areas:'
+    return t
+
+def t_INDEX(t):
+    r'Indice:'
     return t
 
 def t_LING(t):
@@ -127,7 +131,7 @@ def t_TAGCONT_PT(t):
     return t
 
 def t_TAGCONT_ES(t):
-    r'\(en\)'
+    r'\(es\)'
     return t
 
 def t_TAGCONT_GA(t):
