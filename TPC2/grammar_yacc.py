@@ -16,7 +16,7 @@ def p_DicOne(p):
     pass
 
 def p_Entrada(p):
-    "Entrada : ListNL Areas Linguas"
+    "Entrada : ListNL Indice Areas Linguas"
     pass
 
 def p_ListNL(p):
@@ -24,6 +24,10 @@ def p_ListNL(p):
     pass
 def p_ListNLEmpty(p):
     "ListNL : "
+    pass
+
+def p_Indice(p):
+    "Indice : INDEX TEXT NL"
     pass
 
 
