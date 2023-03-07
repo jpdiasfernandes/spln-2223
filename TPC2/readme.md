@@ -1,16 +1,16 @@
 
 # Table of Contents
 
-1.  [Resumo](#orgbcec4b3)
-2.  [Lex](#org04090de)
-3.  [Yacc](#orge2fbd7d)
-    1.  [Gramática (representação macro)](#org46a1f26)
-4.  [Exemplo](#org3b1b813)
-5.  [Trabalho futuro](#orgef7a8de)
+1.  [Resumo](#org8388e96)
+2.  [Lex](#org89811de)
+3.  [Yacc](#orgb146137)
+    1.  [Gramática (representação macro)](#orgc390c52)
+4.  [Exemplo](#orgcf35f08)
+5.  [Trabalho futuro](#orgb613148)
 
 
 
-<a id="orgbcec4b3"></a>
+<a id="org8388e96"></a>
 
 # Resumo
 
@@ -22,7 +22,7 @@
 -   Por fim,  disponibiliza-se duas versões de teste, uma que segue a gramática e outra que apresenta erros sintáticos.
 
 
-<a id="org04090de"></a>
+<a id="org89811de"></a>
 
 # Lex
 
@@ -30,14 +30,14 @@
 -   O espaço e o tab foram ignorados, sendo que o New line é fundamental para a gramática
 
 
-<a id="orge2fbd7d"></a>
+<a id="orgb146137"></a>
 
 # Yacc
 
 -   A estrutura da gramática é baseada numa lista de entradas
 
 
-<a id="org46a1f26"></a>
+<a id="orgc390c52"></a>
 
 ## Gramática (representação macro)
 
@@ -50,7 +50,7 @@
     Ling -> LingCont ':' TEXT '|' ListAtrib NL
 
 
-<a id="org3b1b813"></a>
+<a id="orgcf35f08"></a>
 
 # Exemplo
 
@@ -63,7 +63,7 @@
         (es): cobro
 
 
-<a id="orgef7a8de"></a>
+<a id="orgb613148"></a>
 
 # Trabalho futuro
 
