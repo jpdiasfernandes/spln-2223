@@ -1,15 +1,16 @@
 
 # Table of Contents
 
-1.  [Resumo](#orgbfb5647)
-2.  [Lex](#org47b93c0)
-3.  [Yacc](#org4faa72a)
-    1.  [Gramática (representação macro)](#org3322591)
-4.  [Trabalho futuro](#orga922e72)
+1.  [Resumo](#orgbcec4b3)
+2.  [Lex](#org04090de)
+3.  [Yacc](#orge2fbd7d)
+    1.  [Gramática (representação macro)](#org46a1f26)
+4.  [Exemplo](#org3b1b813)
+5.  [Trabalho futuro](#orgef7a8de)
 
 
 
-<a id="orgbfb5647"></a>
+<a id="orgbcec4b3"></a>
 
 # Resumo
 
@@ -21,7 +22,7 @@
 -   Por fim,  disponibiliza-se duas versões de teste, uma que segue a gramática e outra que apresenta erros sintáticos.
 
 
-<a id="org47b93c0"></a>
+<a id="org04090de"></a>
 
 # Lex
 
@@ -29,14 +30,14 @@
 -   O espaço e o tab foram ignorados, sendo que o New line é fundamental para a gramática
 
 
-<a id="org4faa72a"></a>
+<a id="orge2fbd7d"></a>
 
 # Yacc
 
 -   A estrutura da gramática é baseada numa lista de entradas
 
 
-<a id="org3322591"></a>
+<a id="org46a1f26"></a>
 
 ## Gramática (representação macro)
 
@@ -49,7 +50,20 @@
     Ling -> LingCont ':' TEXT '|' ListAtrib NL
 
 
-<a id="orga922e72"></a>
+<a id="org3b1b813"></a>
+
+# Exemplo
+
+    Indice: e3
+    Areas: (area financeira) (area credito)
+    Ling:
+        (swe): fordran | (syn krav) (syn ansprak)
+        (en): claim | (syn demand) (syn requirement)
+        (pt): cobrança | (nota ato ou feito de cobrar ou receber quaisquer dívidas ou donativos) (syn coleta de quantias)
+        (es): cobro
+
+
+<a id="orgef7a8de"></a>
 
 # Trabalho futuro
 
