@@ -3,6 +3,8 @@ import ply.yacc as yacc
 from grammar_lex import tokens
 import sys
 import tree
+from html import HTML
+from pdf import PDF
 
 def p_Dic(p):
     "Dic : ListEnt"
@@ -165,5 +167,15 @@ file = open(sys.argv[1], "r")
 program = file.read()
 result = parser.parse(program)
 
-result.showDic()
-print(parser.success)
+#result.showDic()
+outputHtml = "output.html"
+outputPdf = "output.pdf"
+html = HTML(result)
+html.flush(outputHtml)
+
+pdf = PDF()
+pdf.setHtml(outputHtml)
+pdf.flushHtml(outputPdf)
+
+
+#print(parser.success)
