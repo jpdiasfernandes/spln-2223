@@ -15,7 +15,7 @@ parser = argparse.ArgumentParser(
 )
 
 
-parser.add_argument('--files', '-f', help="Define the file that is supposed to be tokenized", default=None,required=False, nargs="*")
+parser.add_argument('--files', '-f', help="Define the files that are going to be tokenized", default=None,required=False, nargs="*")
 parser.add_argument('--chapter', '-cap', help="Define the regex for a Chapter", required=False)
 parser.add_argument('--pagebreak', '-pb', help="Define the regex for a page break", required=False)
 parser.add_argument('--output', '-o', help="Define the output files to be written. The output files will map to the same order of input files. If number of output files is less than the number of input files then the other files will be written to the stdin.", required=False, nargs="*")
@@ -27,7 +27,7 @@ files_path = []
 cap = r'(CAP[IÍ]TULO +(\w+)).*?\n(.*?)\n\n'
 pagbreak = r'\n\n'
 output_files = []
-append = False
+append = args.append
 
 abbreviations = {
       "Sra." : "SRA",
@@ -167,8 +167,16 @@ with myinput as input:
 
     text = tokenize(text)
     texts.append(text)
+
+    text_final = ""
     if not append:
-        if len(output_files) == 0:
-            out(texts[-1])
-        else:
-            out(texts[-1], output_files.pop(0))
+        text_final = texts[-1]
+    else:
+        for t in texts:
+            text_final += t
+
+
+    if len(output_files) == 0:
+        out(text_final)
+    else:
+        out(text_final, output_files.pop(0))
