@@ -6,6 +6,8 @@ import re
 import argparse
 import json
 
+__version__ = "0.0.1"
+
 parser = argparse.ArgumentParser(
     prog= 'Tokenizor',
     description= 'Tokenize a file given as input',
