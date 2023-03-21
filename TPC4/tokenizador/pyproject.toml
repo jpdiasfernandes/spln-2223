@@ -10,4 +10,4 @@ classifiers = ["License :: OSI Approved :: MIT License"]
 dynamic = ["version", "description"]
 
 [project.scripts]
-tokenizador = "tokenizador:main"
+tokenizador = "tokenizador.tokenizador:main"

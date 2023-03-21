@@ -5,7 +5,6 @@ import fileinput
 import re
 import argparse
 import json
-__version__="0.70"
 
 def main():
     parser = argparse.ArgumentParser(
@@ -181,6 +180,4 @@ def main():
         else:
             out(text_final, output_files.pop(0))
 
-if __name__ == "__main__":
-    main()
 
