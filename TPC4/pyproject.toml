@@ -8,13 +8,6 @@ authors = [{name = "jpdiasfernandes", email = "jpdiasfernandes13@gmail.com"}]
 license = {file = "LICENSE"}
 classifiers = ["License :: OSI Approved :: MIT License"]
 dynamic = ["version", "description"]
-dependencies = [
-   "sys",
-   "fileinput",
-   "re",
-   "argparse",
-   "json"
-]
 
 [project.urls]
 Home = "https://github.com/jpdiasfernandes/spln-2223"
