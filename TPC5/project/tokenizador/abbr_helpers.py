@@ -11,5 +11,4 @@ def jsonFromAbr(lang :str) -> dict:
         if match := re.match(r'(.*?\.) \: (.*?)$', line):
             res[match.group(1).lower()] = match.group(2)
 
-    print(res)
     return res
