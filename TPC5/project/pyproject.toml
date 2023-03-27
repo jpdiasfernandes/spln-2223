@@ -1,0 +1,17 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "tokenizador"
+authors = [{name = "jpdiasfernandes", email = "jpdiasfernandes13@gmail.com"}]
+license = {file = "LICENSE"}
+classifiers = ["License :: OSI Approved :: MIT License"]
+dynamic = ["version", "description"]
+readme = "readme.md"
+
+[project.urls]
+Source = "https://github.com/jpdiasfernandes/spln-2223/tree/master/TPC5/project"
+
+[project.scripts]
+tokenizador = "tokenizador.tokenizador:main"
